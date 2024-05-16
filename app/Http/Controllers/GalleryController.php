@@ -14,7 +14,7 @@ class GalleryController extends Controller
     //
     public function gallery (){
         $arr = Storage::disk('minio')->allFiles();
-        
+        //
         return view('gallery', compact('arr'));
     }
 
